@@ -13,6 +13,9 @@
 		84D7D74921287B000044A9CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D7D74721287B000044A9CB /* Main.storyboard */; };
 		84D7D74B21287B010044A9CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D7D74A21287B010044A9CB /* Assets.xcassets */; };
 		84D7D74E21287B010044A9CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D7D74C21287B010044A9CB /* LaunchScreen.storyboard */; };
+		84D7D756212892DC0044A9CB /* SpeedVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D755212892DC0044A9CB /* SpeedVIewController.swift */; };
+		84D7D7582128930F0044A9CB /* DistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D7572128930F0044A9CB /* DistanceViewController.swift */; };
+		84D7D75A2128941C0044A9CB /* Converter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D7D7592128941C0044A9CB /* Converter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		84D7D74A21287B010044A9CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84D7D74D21287B010044A9CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84D7D74F21287B010044A9CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84D7D755212892DC0044A9CB /* SpeedVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeedVIewController.swift; sourceTree = "<group>"; };
+		84D7D7572128930F0044A9CB /* DistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceViewController.swift; sourceTree = "<group>"; };
+		84D7D7592128941C0044A9CB /* Converter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Converter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,9 @@
 				84D7D74321287B000044A9CB /* FirstViewController.swift */,
 				84D7D74521287B000044A9CB /* SecondViewController.swift */,
 				84D7D74721287B000044A9CB /* Main.storyboard */,
+				84D7D755212892DC0044A9CB /* SpeedVIewController.swift */,
+				84D7D7572128930F0044A9CB /* DistanceViewController.swift */,
+				84D7D7592128941C0044A9CB /* Converter.swift */,
 				84D7D74A21287B010044A9CB /* Assets.xcassets */,
 				84D7D74C21287B010044A9CB /* LaunchScreen.storyboard */,
 				84D7D74F21287B010044A9CB /* Info.plist */,
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D7D756212892DC0044A9CB /* SpeedVIewController.swift in Sources */,
 				84D7D74621287B000044A9CB /* SecondViewController.swift in Sources */,
 				84D7D74221287B000044A9CB /* AppDelegate.swift in Sources */,
+				84D7D7582128930F0044A9CB /* DistanceViewController.swift in Sources */,
+				84D7D75A2128941C0044A9CB /* Converter.swift in Sources */,
 				84D7D74421287B000044A9CB /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

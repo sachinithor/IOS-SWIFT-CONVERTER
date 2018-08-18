@@ -31,6 +31,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="gramChanged:" destination="9pv-A4-QxB" eventType="editingChanged" id="9pk-vO-IsK"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilogram" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3tv-DK-oBZ">
                                 <rect key="frame" x="16" y="134" width="68" height="21"/>
@@ -45,6 +48,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kilogramChanged:" destination="9pv-A4-QxB" eventType="editingChanged" id="2u5-YV-lIj"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pound" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXJ-Iy-99f">
                                 <rect key="frame" x="16" y="183" width="49" height="21"/>
@@ -59,6 +65,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="poundChand:" destination="9pv-A4-QxB" eventType="editingChanged" id="oTw-MM-xmB"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tkK-Zk-krC">
                                 <rect key="frame" x="159" y="231" width="200" height="30"/>
@@ -66,6 +75,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="ounceChanged:" destination="9pv-A4-QxB" eventType="editingChanged" id="Wyd-Rc-eWt"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ounce" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnA-q0-vPV">
                                 <rect key="frame" x="16" y="236" width="51" height="21"/>
@@ -79,6 +91,12 @@
                         <viewLayoutGuide key="safeArea" id="PQr-Ze-W5v"/>
                     </view>
                     <navigationItem key="navigationItem" title="Weight" id="Iqa-3P-HS4"/>
+                    <connections>
+                        <outlet property="gramT" destination="N6Q-Wm-hbd" id="CtS-is-gVh"/>
+                        <outlet property="kilogramT" destination="z3y-aU-CKM" id="hEY-Fq-Wra"/>
+                        <outlet property="ounceT" destination="tkK-Zk-krC" id="cNl-Mm-lc4"/>
+                        <outlet property="poundT" destination="eZW-LJ-loB" id="rtl-oT-NiB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -105,6 +123,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="celsiusChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="dzQ-LH-NjL"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Fahrenheit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vzA-mN-6X0">
                                 <rect key="frame" x="16" y="146" width="81" height="21"/>
@@ -119,6 +140,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="fahrenheitChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="eGf-NE-Uag"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kelvin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a90-Em-elW">
                                 <rect key="frame" x="16" y="200" width="46" height="21"/>
@@ -133,12 +157,20 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kelvinChanged:" destination="8rJ-Kc-sve" eventType="editingChanged" id="d0d-cT-vbC"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Temperature" id="uKF-8i-q7A"/>
+                    <connections>
+                        <outlet property="celsiusT" destination="ikt-Da-QIk" id="mBu-fF-Zt8"/>
+                        <outlet property="fahrenheit" destination="uq2-R0-vJ4" id="61n-7Q-1iu"/>
+                        <outlet property="kelvinT" destination="5CM-tL-l3y" id="Ulw-eG-jm6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -205,7 +237,7 @@
         <!--Distance-->
         <scene sceneID="I19-Cw-sSJ">
             <objects>
-                <viewController id="xPQ-kI-sFy" sceneMemberID="viewController">
+                <viewController id="xPQ-kI-sFy" customClass="DistanceViewController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sa3-UH-gw8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -223,6 +255,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="metreChanged:" destination="xPQ-kI-sFy" eventType="editingChanged" id="0NZ-yb-3TH"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Foot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l57-EG-741">
                                 <rect key="frame" x="16" y="142" width="35" height="21"/>
@@ -237,6 +272,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="footChanged:" destination="xPQ-kI-sFy" eventType="editingChanged" id="SoW-Tt-S0j"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Yard" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGO-gd-sfK">
                                 <rect key="frame" x="16" y="195" width="35" height="21"/>
@@ -251,6 +289,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="yardChanged:" destination="xPQ-kI-sFy" eventType="editingChanged" id="XsZ-RU-j1P"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilometre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncP-b7-2tc">
                                 <rect key="frame" x="16" y="248" width="73" height="21"/>
@@ -265,6 +306,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kilometreChanged:" destination="xPQ-kI-sFy" eventType="editingChanged" id="dNJ-Qa-M9b"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Teu-gj-l8x">
                                 <rect key="frame" x="16" y="300" width="32" height="21"/>
@@ -279,12 +323,22 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="mileChanged:" destination="xPQ-kI-sFy" eventType="editingChanged" id="3Li-AH-dkK"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="MGs-Ax-Ihb"/>
                     </view>
                     <navigationItem key="navigationItem" title="Distance" id="U6G-Ct-fBI"/>
+                    <connections>
+                        <outlet property="footT" destination="fYL-SY-yOh" id="avS-TH-OqJ"/>
+                        <outlet property="kilometreT" destination="h1R-ew-BCn" id="G1J-mt-ecU"/>
+                        <outlet property="metreT" destination="bvh-Fs-BKi" id="RIZ-YM-ieU"/>
+                        <outlet property="mileT" destination="PqF-4i-I3T" id="HFa-qX-RL1"/>
+                        <outlet property="yardT" destination="5LZ-OO-IfJ" id="oUy-vk-IMW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fLz-X1-PPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -312,7 +366,7 @@
         <!--Speed-->
         <scene sceneID="Suk-Af-P6G">
             <objects>
-                <viewController id="PNi-nt-hVj" sceneMemberID="viewController">
+                <viewController id="PNi-nt-hVj" customClass="SpeedVIewController" customModule="Unit_Converter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7St-Bo-I3R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -330,6 +384,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="mpsChanged:" destination="PNi-nt-hVj" eventType="editingChanged" id="K7E-wW-odb"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Feet per minute" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD0-UE-Z7p">
                                 <rect key="frame" x="16" y="158" width="121" height="21"/>
@@ -344,6 +401,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="fpmChanged:" destination="PNi-nt-hVj" eventType="editingChanged" id="NoS-R7-yli"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kilometre per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7NT-Ne-71d">
                                 <rect key="frame" x="16" y="213" width="142" height="21"/>
@@ -358,6 +418,9 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="kpmChanged:" destination="PNi-nt-hVj" eventType="editingChanged" id="7KQ-NR-xru"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Miles per hour" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WB4-GW-G49">
                                 <rect key="frame" x="16" y="267" width="110" height="21"/>
@@ -372,12 +435,21 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="mphChanged:" destination="PNi-nt-hVj" eventType="editingChanged" id="dij-B3-Sjt"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vYx-nB-aBS"/>
                     </view>
                     <navigationItem key="navigationItem" title="Speed" id="x9x-Pd-KgY"/>
+                    <connections>
+                        <outlet property="fpmT" destination="oBE-EW-qcb" id="em0-0K-SrN"/>
+                        <outlet property="kphT" destination="C7U-ms-5lQ" id="cVq-hA-yEI"/>
+                        <outlet property="mphT" destination="zL5-Ct-DHx" id="ZqB-ac-oed"/>
+                        <outlet property="mpsT" destination="uVk-XX-jY2" id="sc7-vq-je5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBy-L5-Sto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
